@@ -1,72 +1,40 @@
-# HeyAuth 更新日志
+# HeyAuth Community
 
-## V0.5.0 Alpha 4
+这里是 HeyAuth 的社区。即便您没有购买 HeyAuth, 您也可以在这里了解到 HeyAuth 的相关信息，
+和社区里的伙伴们一起交流与学习。
 
-### 2025-02-25
+`CHANGELOG.md` 中包含了 HeyAuth 的更新日志，会有比较大的延迟。
+如果您是正版用户，可以查看 [HeyAuth 蓝图](https://github.com/orgs/HeyAuth/projects/1) 来查看实时计划。
 
--   优化 尝试优化用户登录的安全性
+如果您有什么疑惑，可联系 [admin@yuxiaoqiu.cn](mailto:admin@yuxiaoqiu.cn) 以咨询。
 
--   错误 全新创建数据库时无法读取系统设置
+如果您发现 HeyAuth 有什么问题，或者是新功能请求，可以 [发起issue](https://github.com/HeyAuth/HeyAuth-Release/issues/new/choose)
+来咨询。无论是正版还是盗版用户，我们都会尽可能耐心地回答您。
+~~除非您是盗版而且我们忍不住或是实在太抽象的正版用户~~
 
-### 2025-02-24
+### HeyAuth 立项
 
--   修复 管理员面板用户编辑用户不自动填充
+HeyAuth 从 `2024-07-28 15:31:46` 开始开发，距今已过
 
-### 2025-02-23
+<div id="box1"></div>
+  <script>
+    function timingTime(){
+      let start = '2024-07-28 15:31:46'
+      let startTime = new Date(start).getTime()
+      let currentTime = new Date().getTime()
+      let difference = currentTime - startTime
+      let m =  Math.floor(difference / (1000))
+      let mm = m % 60  // 秒
+      let f = Math.floor(m / 60)
+      let ff = f % 60 // 分钟
+      let s = Math.floor(f/ 60) // 小时
+      let ss = s % 24
+      let day = Math.floor(s  / 24 ) // 天数
+      return day + "天" + ss + "时" + ff + "分" + mm +'秒'
+    }
+    setInterval(()=>{
+      document.getElementById('box1').innerHTML = timingTime()
+    },1000)
+  </script><br>
 
--   优化 添加用户
--   优化 管理员面板用户的显示
-
--   修复 管理员面板用户仪表盘
-
-### 2025-02-22
-
--   优化 数据库中间件
-
--   修复 后台面板的仪表盘
-
-### 2025-02-21
-
--   新增 其他数据库操作器
-
--   优化 用户前端面板
-
-
-## V0.5.0 Alpha 3
-
-### 2025-02-10
-
--   优化 首页的响应式渲染
-
-### 2025-02-08
-
--   新增 用户与设置操作方法
--   新增 连接丢失时的多语言支持（需要定制版依赖，已向官方提交Pr）
-
--   修复 未登录用户也能进入管理员后台
--   修复 登录屡次密码错误
-
-## V0.5.0 Alpha 2
-
-### 2025-01-26
-
--   修复 SQLModel创建表，现在可以创建任何表了
-
-### 2025-01-25
-
--   新增 SQLModel支持创建表（只能创建B端授权、产品、额度和系统日志四张表，待修复）
-
--   优化 内置API文档的显示
--   优化 登录接口的安全性（没完成）
-
--   修复 日志记录器的异常
--   修复 自动文档的summary与description显示信息
-
-### 2025-01-24
-
--   新增 VSCode 快速启动
--   新增 HeyAuth 快速清理
-
--   优化 分页加载管理员后台，显著提高加载速度，降低占用
-
--   修复 用户管理面板标题栏显示异常
+  如果加载不出来是因为禁止了Javascript `(xwx`
